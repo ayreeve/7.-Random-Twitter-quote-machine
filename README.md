@@ -1,4 +1,4 @@
-# Random Twitter quote generator
+# Random Twitter quote machine
 * Ajax
 * API
 * jQuery
