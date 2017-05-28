@@ -5,11 +5,15 @@ var url = 'http://api.icndb.com/jokes/random',
         getJoke();
     }),
     $paragraph = $('#joke'),
+    prefix = "https://cors-anywhere.herokuapp.com/",
     tweetLink = "https://twitter.com/intent/tweet?text=",
     quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
 
 function getQuote() {
-    $.getJSON(quoteUrl, createTweet);
+    $.getJSON(prefix + quoteUrl, createTweet);
+    $.ajaxSetup({
+        cache: false
+    });
 }
 
 function createTweet(input) {
@@ -38,5 +42,5 @@ $(document).ready(function () {
     getQuote();
     $('.trigger').click(function () {
         getQuote();
-    })
+    });
 });
