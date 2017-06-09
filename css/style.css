@@ -1,0 +1,149 @@
+/* GENERAL */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    margin: auto;
+    background-image: url(../images/background/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    max-width: 600px;
+    max-height: 300px;
+    margin: 20vh auto;
+    padding: 0 20px;
+    text-align: center;
+    font-family: 'Averia Serif Libre', cursive;
+    color: #1d1d1d;
+}
+
+
+/* TEXTS */
+
+
+/* title */
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+
+/* cite */
+
+h2 {
+    font-style: italic;
+    color: #5a5a5a
+}
+
+
+/*author*/
+
+h3 {
+    font-size: 1em;
+}
+
+
+/* BUTTON */
+
+button {
+    margin: 30px auto;
+    padding: 15px;
+    display: block;
+    background-color: #efefef;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 10px #ccc;
+    box-shadow: 4px 4px 15px #ccc;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #1d1d1d;
+    color: #efefef;
+}
+
+
+/* TWITTER ICON */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 992px),
+(max-height: 600px) {
+    body {
+        font-size: 14px;
+    }
+    main {
+        max-width: 500px;
+    }
+    button {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 768px),
+(max-height: 500px) {
+    body {
+        font-size: 12px;
+    }
+    main {
+        margin: 10vh auto;
+        padding: 35px;
+    }
+    button {
+        margin: 10px auto;
+        -webkit-transform: scale(.9);
+        transform: scale(.9);
+        font-size: 1.2em;
+    }
+    a img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 500px),
+(max-height: 400px) {
+    body {
+        font-size: 11px;
+    }
+    main {
+        margin: 10vh auto;
+    }
+}
+
+@media (max-width: 430px),
+(max-height: 320px) {
+    h1 {
+        margin: 0;
+    }
+    button {
+        display: inline;
+    }
+    main {
+        margin: 9vh;
+    }
+    a {
+        position: relative;
+        top: 10px;
+    }
+}
