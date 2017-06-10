@@ -6,6 +6,7 @@
 }
 
 body {
+    height: 100vh;
     min-height: 100%;
     margin: auto;
     background-image: url(../images/background/background.jpg);
@@ -23,6 +24,9 @@ main {
     text-align: center;
     font-family: 'Averia Serif Libre', cursive;
     color: #1d1d1d;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 
