@@ -24,7 +24,7 @@ main {
     text-align: center;
     font-family: 'Averia Serif Libre', cursive;
     color: #1d1d1d;
-    position: fixed;
+    position: expression(fixed);
     left: 0;
     right: 0;
 }
